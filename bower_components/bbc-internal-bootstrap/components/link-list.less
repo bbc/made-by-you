@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Link list
+   ========================================================================== */
+
+/**
+ * Used for a simple list of plain links. Works well with the Aside component
+ *
+ * Example HTML
+
+  <ul class="LinkList">
+      <li class="LinkList-item"><a href="/url">{{ item }}</a></li>
+      <li class="LinkList-item"><a href="/url">{{ item }}</a></li>
+      <li class="LinkList-item"><a href="/url">{{ item }}</a></li>
+  </ul>
+
+ *
+ */
+
+.LinkList {
+  .list-unstyled;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Adds a highlight on hover or focus */
+.LinkList--highlight .LinkList-item {
+  > a {
+    &:hover, &:focus {
+      background-color: @light-grey;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Adds a border to items */
+.LinkList--border {
+  border-top: 2px solid darken(@light-grey, 10%);
+  .LinkList-item {
+    border-bottom: 1px solid @light-grey;
+  }
+}
+
+/* Removes horizontal padding from items */
+.LinkList--nopadding .LinkList-item {
+  > a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.LinkList-item {
+  > a {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

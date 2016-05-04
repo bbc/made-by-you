@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>
+            {% if page.title %}
+                {{ page.title }} &middot; BBC Internal Bootstrap
+            {% else %}
+                BBC Internal Bootstrap
+            {% endif %}
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/assets/css/bbc-bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/built/docs.min.css">
+        <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+    </head>
+    <body>
+        <header class="MastHead" role="banner">
+            <div class="container">
+                <a class="MastHead-brand MastHead-brand--default" href="/">BBC <span class="hidden-xs">Internal</span> Bootstrap</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </header>
+        {% include nav/main.html %}
+        <div class="Page" role="main">
+            {% if page.title %}
+            <div class="PageHeader">
+                <div class="container">
+                    <h1 class="PageHeader-title">{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                        <p class="PageHeader-subtitle">{{ page.subtitle }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+            {{ content }}
+        </div>
+        <footer class="SiteFooter" role="contentinfo">
+            <div class="SiteFooter-content container">
+                <p class="u-pullLeft">BBC Internal Bootstrap is an extension of the original <a
+                        class="u-textInheritColor" href="http://getbootstrap.com">Twitter Bootstrap</a>.</p>
+                <p class="u-pullRight">
+                  <a class="u-textInheritColor" href="https://github.com/bbc-fm-nk-core-eng/bbc-internal-bootstrap">View on GitHub</a>
+                </p>
+            </div>
+        </footer>
+        <script src="/assets/built/docs.min.js"></script>
+    </body>
+</html>

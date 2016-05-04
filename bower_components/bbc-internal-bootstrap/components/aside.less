@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Aside
+   ========================================================================== */
+
+/**
+ * Used to display highlighted information in sidebars or other call-out areas.
+ * Can contain content or other components
+ *
+ * Example HTML
+
+  <div class="Aside">
+      <h2 class="Aside-header">{{ title }}</h2>
+      <div class="Aside-content">
+          {{ content|component }}
+      </div>
+  </div>
+
+ *
+ */
+
+@aside-bdr: #eaeaea;
+
+.Aside {
+  background: #f4f4f4;
+  padding-top: 6px;
+  padding-bottom: 8px;
+}
+
+/* Add border that surrounds whole element */
+.Aside--border {
+  border: 1px solid @aside-bdr;
+}
+
+/* Remove top border if Aside is stacked in a list */
+.Aside--borderFirst {
+  .Aside--border;
+  border-bottom: none;
+}
+
+.Aside-header {
+  padding: 0 10px 5px;
+  margin: 5px 0;
+  font-size: @font-size-h5;
+  color: #aaa;
+  border-bottom: 1px solid @aside-bdr;
+}
+
+/* Sizing modifiers
+========================================================================== */
+.Aside-header--sm {
+  font-size: @font-size-h6;
+}
+
+.Aside-header--lg {
+  font-size: @font-size-h4;
+}
+
+.Aside-content {
+  word-wrap: break-word;
+  margin-left: 10px;
+}
+
+/* Usage with LinkList
+   ========================================================================== */
+.Aside .LinkList {
+  margin-left: -10px;
+}

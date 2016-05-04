@@ -1,0 +1,112 @@
+<h2 id="js-masthead">Masthead</h2>
+<p class="lead">A master header used to display the site logo and other information.</p>
+
+<h3 id="js-masthead-basic">Basic</h3>
+<p>The basic masthead, designed to be used by products that don't have a specific logo.</p>
+
+<div class="bs-example">
+    <header class="MastHead" role="banner">
+        <div class="container">
+            <a class="MastHead-brand MastHead-brand--default" href="#">Linked Data Manager</a>
+            <p class="MastHead-text">
+                Signed in as <a href="#" class="MastHead-link">Sam Starling</a>
+            </p>
+        </div>
+    </header>
+</div>
+{% highlight html %}
+<header class="MastHead" role="banner">
+    <div class="container">
+        <a class="MastHead-brand MastHead-brand--default" href="#">
+            Linked Data Manager
+        </a>
+        <p class="MastHead-text">
+            Signed in as <a href="#" class="MastHead-link">Sam Starling</a>
+        </p>
+    </div>
+</header>
+{% endhighlight %}
+
+<div class="bs-callout bs-callout-info">
+    <h4 id="js-masthead-basic-nologo">Don't want a Logo?</h4>
+    <p>The generic 'BBC' logo is included with the <code>MastHead-brand--default</code> class - omit this if you don't want any logo.</p>
+</div>
+
+<h3>Compact</h3>
+<p>A masthead that isn't so tall, with built in navigation.</p>
+
+<div class="bs-example">
+  <header class="MastHead MastHead--compact" role="banner">
+    <a class="MastHead-brand MastHead-brand--default" href="#">
+        Linked Data Manager
+    </a>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <p class="navbar-text">Hello</p>
+      </div>
+    </div>
+
+  </header>
+</div>
+
+
+<h3 id="js-masthead-custom">Custom Logo</h3>
+<p>By creating a component modifier, the logo for a product can be added. <code>MastHead-brand--iSite</code> is an example shown below;</p>
+
+<div class="bs-example">
+    <header class="MastHead" role="banner">
+        <div class="container">
+            <a class="MastHead-brand MastHead-brand--iSite" href="#">
+                iSite
+            </a>
+            <p class="MastHead-text hidden-xs">
+                Signed in as <a href="#" class="MastHead-link">Sam Starling</a>
+            </p>
+        </div>
+    </header>
+</div>
+
+{% highlight html %}
+HTML
+
+<header class="MastHead" role="banner">
+    <div class="container">
+        <a class="MastHead-brand MastHead-brand--iSite" href="#">
+            Linked Data Manager
+        </a>
+        <p class="MastHead-text hidden-xs">
+            Signed in as <a href="#" class="MastHead-link">Sam Starling</a>
+        </p>
+    </div>
+</header>
+{% endhighlight %}
+{% highlight css %}
+CSS
+
+.MastHead-brand--iSite {
+    background-image: url('./img/isite-logo.png');
+    text-indent: -10000px;
+    vertical-align: middle;
+    width: 168px;
+}
+{% endhighlight %}
+
+<div class="bs-callout bs-callout-info">
+    <h4 id="js-masthead-custom-hiding">Hiding the Masthead Text</h4>
+    <p>You can hide the right-hand MastHead text, as in this example, when displayed at the smallest breakpoint by including the bootstrap <code>hidden-xs</code> class</p>
+</div>
+

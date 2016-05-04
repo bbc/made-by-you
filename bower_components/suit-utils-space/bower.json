@@ -1,0 +1,10 @@
+{
+    "name": "utils-space",
+    "version": "0.1.3",
+    "author": "Nicolas Gallagher",
+    "main": "space.css",
+    "ignore": [
+        "CHANGELOG.md",
+        "test.html"
+    ]
+}

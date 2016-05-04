@@ -1,0 +1,2 @@
+source: docs
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']

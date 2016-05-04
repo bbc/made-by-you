@@ -1,0 +1,59 @@
+h1 {
+    margin-top: 0;
+}
+
+.taster-tab {
+    background-color: #c0c0c0;
+    border: 1px solid #3c3c3c;
+    border-bottom: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.info-page,
+.story-page {
+    border: 1px solid #3c3c3c;
+    border-top: 0;
+    padding: 1em;
+    position: absolute;
+    visibility: hidden;
+}
+
+.try-page {
+    position: absolute;
+    visibility: hidden;
+}
+
+.active {
+    position: relative;
+    visibility: visible;
+}
+
+.try-page--full-height {
+    min-height: 850px;
+    min-height: 90vh;
+}
+
+.try-page--full-height .web-frame {
+    min-height: 850px;
+    min-height: 90vh;
+}
+
+.try-page--16x9 {
+    margin: 0 auto;
+    max-width: 976px;
+}
+
+.try-page--16x9 .iframe-wrapper {
+    padding-top: 56.25%;
+}
+
+.try-page--16x9 .web-frame {
+    left: 0;
+    position: absolute;
+    top: 0;
+}

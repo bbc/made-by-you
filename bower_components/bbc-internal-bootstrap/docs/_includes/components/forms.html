@@ -1,0 +1,152 @@
+
+<p class="first-paragraph">
+    Bootstrap has great forms out of the box, so by default you can just use those.
+    This page just highlights the places where Internal Bootstrap deviates from
+    Twitter Bootstrap.
+</p>
+
+<hr/>
+
+<h3 id="js-aside-enhanced-label">Enhanced Label</h3>
+<p>This is for use in a 'horizontal' form, to give a more descriptive label to users.</p>
+
+<div class="bs-example">
+    <form role="form">
+        <div class="form-group u-mbZ">
+            <label for="exampleInputEmail1">
+                <div class="FormGroup-title">Short Title <span class="label label-hollow">optional</span></div>
+                <div class="FormGroup-description">Will appear when the storyline is displayed alongside tagged stories.</div>
+            </label>
+            <input type="text" class="form-control FormControl--large" id="exampleInputEmail1" placeholder="eg. Costa Concordia disaster" />
+        </div>
+    </form>
+</div>
+{% highlight html %}
+<div class="form-group">
+    <label for="label1">
+        <div class="FormGroup-title">
+            Short Title
+            <span class="label label-hollow">optional</span>
+        </div>
+        <div class="FormGroup-description">
+            Will appear when the storyline is displayed alongside tagged stories.
+        </div>
+    </label>
+    <input type="text" class="form-control FormControl--large" id="label1"
+           placeholder="eg. Costa Concordia disaster" />
+</div>
+{% endhighlight %}
+
+
+<hr/>
+
+<h3 id="js-aside-input-sizes">Input Sizes</h3>
+<p>The larger input sizes have less padding, but use the same <code>.input-lg</code> class.</p>
+
+<div class="bs-example">
+    <form role="form">
+        <div class="form-group u-mbZ">
+            <input type="text" class="form-control input-lg" placeholder="eg. Manchester United" />
+        </div>
+    </form>
+</div>
+
+{% highlight html %}
+<input type="text" class="form-control input-lg" placeholder="eg. Manchester United" />
+{% endhighlight %}
+
+<hr/>
+
+<h3 id="js-aside-borderless-input">'Borderless' Inputs</h3>
+<p>Inputs that only have a bottom border. Can be used in all sizes.</p>
+
+<div class="bs-example">
+    <form role="form">
+        <div class="form-group u-mbZ">
+            <input type="text" class="form-control input-borderless" placeholder=".input-borderless"/>
+            <input type="text" class="form-control input-borderless input-lg" placeholder="with .input-lg"/>
+        </div>
+    </form>
+</div>
+{% highlight html %}
+<input type="text" class="form-control input-borderless" />
+<input type="text" class="form-control input-borderless input-lg" />
+{% endhighlight %}
+
+<hr/>
+
+<h3 id="js-aside-validation">Validation</h3>
+<p>Add the relevant class (eg. <code>.has-error</code>) to the <code>.form-group</code>element.</p>
+
+<div class="bs-example">
+    <form role="form">
+        <div class="form-group u-mbZ has-error">
+            <label for="inputError1">
+                <div class="FormGroup-title">
+                    Website
+                    <span class="label label-hollow">optional</span>
+                </div>
+                <div class="FormGroup-description">
+                    The URL of the website for this organisation
+                </div>
+            </label>
+            <input type="text" class="form-control" id="inputError1" value="google">
+            <div class="FormGroup-validation">The URL is not valid.</div>
+        </div>
+    </form>
+</div>
+{% highlight html %}
+<div class="form-group has-error">
+    <label for="inputError1">
+        <div class="FormGroup-title">
+            Website
+            <span class="label label-hollow">optional</span>
+        </div>
+        <div class="FormGroup-description">
+            The URL of the website for this organisation
+        </div>
+    </label>
+    <input type="text" class="form-control" id="inputError1" value="google">
+    <div class="FormGroup-validation">The URL is not valid.</div>
+</div>
+{% endhighlight %}
+
+<h4 id="js-aside-validation-borderless">With 'Borderless' Inputs</h4>
+
+<div class="bs-example">
+    <form role="form">
+        <div class="form-group u-mbZ has-error">
+            <label for="inputError2">
+                <div class="FormGroup-title">
+                    Website
+                    <span class="label label-hollow">optional</span>
+                </div>
+                <div class="FormGroup-description">
+                    The URL of the website for this organisation using borderless input
+                </div>
+            </label>
+            <div class="form-group u-mbZ has-error">
+                <input type="text" class="form-control input-borderless" id="inputError2" value="borderless validation" />
+                <div class="FormGroup-validation">The URL is not valid.</div>
+            </div>
+        </div>
+    </form>
+</div>
+{% highlight html %}
+<div class="form-group u-mbZ has-error">
+    <label for="inputError2">
+        <div class="FormGroup-title">
+            Website
+            <span class="label label-hollow">optional</span>
+        </div>
+        <div class="FormGroup-description">
+            The URL of the website for this organisation using borderless input
+        </div>
+    </label>
+    <div class="form-group u-mbZ has-error">
+        <input type="text" class="form-control input-borderless" id="inputError2" value="borderless validation" />
+        <div class="FormGroup-validation">The URL is not valid.</div>
+    </div>
+</div>
+{% endhighlight %}
+

@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Spacing utilities
+   ========================================================================== */
+
+/**
+ * Based off the suit-utils-space package (https://github.com/suitcss/utils-space)
+ * but specifically targets zeroing margin/padding on elements
+ *
+ * m - margin
+ * p - padding
+ * l - left
+ * t - top
+ * r - right
+ * b - bottom
+ * Z - zero
+ * A - all
+ * V - vertical
+ * H - horizontal
+ *
+ * Example:
+ * u-pbZ = padding-bottom: 0;
+ * u-mrZ = margin-right: 0;
+ * u-mAZ = margin: 0;
+*/
+
+/* All */
+.u-mAZ { margin: 0 !important; }
+.u-pAZ { padding: 0 !important; }
+
+/* Top */
+.u-mtZ { margin-top: 0 !important; }
+.u-ptZ { padding-top: 0 !important; }
+
+/* Left */
+.u-mlZ { margin-left: 0 !important; }
+.u-plZ { padding-left: 0 !important; }
+
+/* Right */
+.u-mrZ { margin-right: 0 !important; }
+.u-prZ { padding-right: 0 !important; }
+
+/* Bottom */
+.u-mbZ { margin-bottom: 0 !important; }
+.u-pbZ { padding-bottom: 0 !important; }
+
+/* Horizontal */
+.u-mHZ { margin-left: 0 !important; margin-right: 0 !important; }
+.u-pHZ { padding-left: 0 !important; padding-right: 0 !important; }
+
+/* Vertical */
+.u-mVZ { margin-top: 0 !important; margin-bottom: 0 !important; }
+.u-pVZ { padding-top: 0 !important; padding-bottom: 0 !important; }

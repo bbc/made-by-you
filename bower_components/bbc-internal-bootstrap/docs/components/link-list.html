@@ -1,0 +1,23 @@
+---
+layout: default
+title: Link List
+subtitle: A simple list of links. Usually used with an Aside, but can be used alone.
+slug: components
+---
+
+<div class="container bs-docs-container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="bs-docs-section">
+                {% include components/link-list.html %}
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="bs-docs-sidebar hidden-print affix-top">
+                <ul class="nav bs-docs-sidenav">
+                    {% include sidebar/link-list.html %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

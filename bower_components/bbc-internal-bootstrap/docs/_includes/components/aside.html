@@ -1,0 +1,146 @@
+<h3 id="js-aside-basic">Basic</h3>
+<p>A simple box with header and content. It will fill the width of its containing element</p>
+<div class="bs-example">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="Aside">
+                <h2 class="Aside-header">A header</h2>
+                <div class="Aside-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur felis at velit
+                        consequat, quis semper est blandit. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% highlight html %}
+HTML
+
+<div class="Aside">
+    <h2 class="Aside-header">A header</h2>
+    <div class="Aside-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur felis at velit
+            consequat, quis semper est blandit. </p>
+    </div>
+</div>
+{% endhighlight %}
+
+<div class="bs-callout bs-callout-info">
+    <h4>Heading sizes</h4>
+    <p><code>Aside-header</code> can be modified with <code>Aside-header--sm</code> and <code>Aside-header--lg</code>
+        .</p>
+</div>
+
+<h3 id="js-aside-borders">With LinkList component and borders</h3>
+<p>Used with LinkList component and borders it can create a sidebar of links</p>
+
+<div class="bs-example">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="Aside Aside--borderAll">
+                <h2 class="Aside-header">A header</h2>
+                <div class="Aside-content">
+                    <ul class="LinkList LinkList--highlight">
+                        <li class="LinkList-item"><a href="/url">Some link text</a></li>
+                        <li class="LinkList-item"><a href="/url">Some link text</a></li>
+                        <li class="LinkList-item"><a href="/url">Some link text</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% highlight html %}
+HTML
+
+<div class="Aside Aside--borderAll">
+    <h2 class="Aside-header">A header</h2>
+    <div class="Aside-content">
+        <ul class="LinkList LinkList--highlight">
+            <li class="LinkList-item"><a href="/url">Some link text</a></li>
+            <li class="LinkList-item"><a href="/url">Some link text</a></li>
+            <li class="LinkList-item"><a href="/url">Some link text</a></li>
+        </ul>
+    </div>
+</div>
+{% endhighlight %}
+
+<h3 id="js-aside-stacked">Stacked</h3>
+<p>Adding a <code>Aside--borderFirst</code> class the first Aside can create a stacked list style</p>
+
+<div class="bs-example">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="Aside Aside--borderFirst">
+                <h2 class="Aside-header">A header</h2>
+                <div class="Aside-content">
+                    <ul class="LinkList LinkList--highlight">
+                        <li class="LinkList-item"><a href="/url">Some link text</a></li>
+                        <li class="LinkList-item"><a href="/url">Some link text</a></li>
+                        <li class="LinkList-item"><a href="/url">Some link text</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Aside Aside--border">
+                <h2 class="Aside-header">A header</h2>
+                <div class="Aside-content">
+                    <ul class="LinkList LinkList--highlight">
+                        <li class="LinkList-item"><a href="/url">Some link text</a></li>
+                        <li class="LinkList-item"><a href="/url">Some link text</a></li>
+                        <li class="LinkList-item"><a href="/url">Some link text</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% highlight html %}
+HTML
+
+<div class="Aside Aside--borderFirst">
+    <h2 class="Aside-header">A header</h2>
+    <div class="Aside-content">
+        <ul class="LinkList LinkList--highlight">
+            <li class="LinkList-item"><a href="/url">Some link text</a></li>
+            <li class="LinkList-item"><a href="/url">Some link text</a></li>
+            <li class="LinkList-item"><a href="/url">Some link text</a></li>
+        </ul>
+    </div>
+</div>
+<div class="Aside Aside--border">
+    <h2 class="Aside-header">A header</h2>
+    <div class="Aside-content">
+        <ul class="LinkList LinkList--highlight">
+            <li class="LinkList-item"><a href="/url">Some link text</a></li>
+            <li class="LinkList-item"><a href="/url">Some link text</a></li>
+            <li class="LinkList-item"><a href="/url">Some link text</a></li>
+        </ul>
+    </div>
+</div>
+{% endhighlight %}
+
+<h3 id="js-aside-images">Images</h3>
+<p>Asides can also easily contain other media</p>
+
+<div class="bs-example">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="Aside Aside--border">
+                <h2 class="Aside-header">A header</h2>
+                <div class="Aside-content u-textCenter">
+                    <img class="img-thumbnail" src="http://placehold.it/120x120">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% highlight html %}
+HTML
+
+<div class="Aside Aside--border">
+    <h2 class="Aside-header">A header</h2>
+    <div class="Aside-content u-textCenter">
+        <img class="img-thumbnail" src="http://placehold.it/120x120">
+    </div>
+</div>
+{% endhighlight %}

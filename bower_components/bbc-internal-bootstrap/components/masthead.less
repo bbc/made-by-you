@@ -1,0 +1,119 @@
+/* ==========================================================================
+   MastHead
+   ========================================================================== */
+
+/**
+ * Used as a main header across the top of a site or application.
+ * Use the container class to constrain the contents
+ *
+ * Example HTML
+
+  <header class="MastHead" role="banner">
+    <div class="container">
+      <a class="MastHead-brand" href="#">Linked Data Manager</a>
+      <p class="MastHead-text">Signed in as <a href="#" class="MastHead-link">Sam Starling</a></p>
+    </div>
+  </header>
+
+ *
+ */
+
+@header-height: 65px;
+
+.MastHead {
+  position: relative;
+  min-height: @header-height;
+  margin-bottom: @navbar-margin-bottom;
+
+  background-color: @navbar-inverse-bg;
+  border-color: @navbar-inverse-border;
+
+  line-height: @header-height;
+  vertical-align: middle;
+  background: @brand-primary;
+  color: #fff;
+
+  .nav > li > a {
+    color: @navbar-inverse-color;
+  }
+
+  .nav > li > a:hover, .nav > li.open > a {
+    color: @navbar-inverse-bg;
+  }
+
+  .navbar-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.MastHead--compact {
+  @header-height: 46px;
+  min-height: @header-height;
+  line-height: @header-height;
+
+  .MastHead-brand {
+    line-height: @header-height;
+    margin-left: 10px;
+  }
+
+  .nav > li > a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .navbar-text {
+    padding-right: 5px;
+  }
+}
+
+.MastHead-brand {
+  line-height: @header-height;
+  font-size: 18px;
+  float: left;
+  background-position: left center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* Displays a BBC logo */
+.MastHead-brand--default {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAYCAYAAABk8drWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4xJREFUeNrsmWlIFVEUx9+iuUaltmKLtlBZlNlGRFIRJvQpCoK+F/QlCEMQCqL6IH1o+xYE0UplZX0pKoJos8X85FIUlppJJVnaovZ8/Q/8B27TzHOcufOgeAd+vDvvzjvn3jP3nnvmvGAUEoiPBJX2f2szmHBowqH/rEM/gjMciHlgw8EcUAhSNE6uH5wEXSBsul/sTAVLwQgfHfoWPAF1oB58ATlgLigA88A0k27Fir3UAXF4IAbLQGPUmai/s5NuMHEQm5NAtUabhrSBrSBtEPvJYBW4bGfQiUPlM4mYnTwe1GuaXA8dZtxn2AxZTKxKo0OvgGzT/WEwFkzmZ9jUPx8MmBWFHG6DfFDLLfAMHAPj2PceHPEhHKWBG6CJ268aLFH6K8A3DXYugPWgk9dZoAw8BC9BAz+fgqMMOSIDXrZ8Aeg39Z9WntYs0Kd5hWaCFlP/K5Ch6Kn1aLMJjFLuWQPaHaz8O6DMas5JDp+iVUDPMwX/oOYVGrWwmw0yNK1MkQPgM9vLwVXujMFkJflLQi5OS0NOKW0ZTJIPKY95fDfBB7angxke9LeAKuV6n0NnxhSnTvjKpyfSzInd4vVMsNOHGPoLXGesbgU14BL7JG07BDI96L/PlEhkASjWMWinDpUJbbA5OPYyL9MtP8EWm75toNSj/hab8OVJQh5//wNsBJvB90D8pBIsZAbgVnqVdrKugTldoVPACRqWg6Ib3APnwWtwlmnEOc1pk8TpXG7/fqZPF8Ej8BysYyjIcaF/tNJu03eUuk+bRFpBrpJ23PY5bTKkVNFV6dLmY6VPbL2IahCnW97uPVhWT5FyXedz2mTIWqVd41L/YlDCdg/YH88YGoxxErcq12HNaZOd3QYXYctKypW2FGV22L4B/Slv+NtPbmNoH0/FYVw1EdAODjOWGYF9hUaHysTeUW8fv+tiDD2u3FfiwYYk57uYqYgcZDoljl0EJjCWS8bRARqZu8qZkWp6IEOKoSG+8hmkWRRJyjW/eor+dMVmukWRRKpdvRqKIxUWxZcUMAUUgnyQaurPAp1uq02xEMV7rCovPpXvjMluAh0ay3fXQJED2wE6ejeImJXEKjA3s+oSMcXaKENFHouusuXGaCr2ytbaznCSbHFIyRacDVbzDU13gVnCzF2+oT1giBngWEay0lTMUJGe+Atk6BKhQ8NOD/CEQ+P4n1LCoS7ktwADAN1qw4H4dhseAAAAAElFTkSuQmCC');
+  padding: 0 0 0 95px;
+}
+
+.MastHead-text {
+  margin: 0;
+  margin-left: @navbar-padding-horizontal;
+  margin-right: @navbar-padding-horizontal;
+  line-height: @header-height;
+
+  float: right;
+
+  @media (max-width: @container-sm) {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.MastHead-link {
+  color: #fff;
+  text-decoration: underline;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+

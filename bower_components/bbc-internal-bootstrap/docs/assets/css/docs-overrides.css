@@ -1,0 +1,94 @@
+.MastHead-brand--iSite {
+  background-image: url('../img/isite-logo.png');
+  text-indent: -10000px;
+  vertical-align: middle;
+  width: 168px;
+}
+
+.bs-example .container {
+  width: auto;
+}
+
+.Sidebar-item {
+  margin-top: 20px;
+}
+
+.bs-glyphicons .Icon {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.bs-glyphicons li:hover {
+  color: #333;
+  background-color: #ddd;
+}
+
+.bs-docs-sidebar .nav .nav {
+  display: block;
+}
+
+.highlight {
+  background: #f7f7f9 !important;
+}
+
+pre code {
+  white-space: pre;
+}
+
+pre {
+  word-wrap: normal;
+}
+
+/* PageHeader customisation */
+
+.PageHeader--docs {
+  padding: 30px 0 35px 0;
+  background: -moz-linear-gradient   (top,        rgb(234, 234, 234) 0%, rgba(0,0,0,0.15) 100%);
+  background: -webkit-linear-gradient(top,        rgb(234, 234, 234) 0%, rgba(0,0,0,0.15) 100%);
+  background: -o-linear-gradient     (top,        rgb(234, 234, 234) 0%, rgba(0,0,0,0.15) 100%);
+  background: -ms-linear-gradient    (top,        rgb(234, 234, 234) 0%, rgba(0,0,0,0.15) 100%);
+  background: linear-gradient        (to bottom,  rgb(234, 234, 234) 0%, rgba(0,0,0,0.15) 100%);
+}
+
+.PageHeader--docs {
+  border-bottom: none;
+}
+
+.PageHeader--docs .PageHeader-title {
+  margin-top: 10px;
+  color: #428BCA;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+}
+
+.PageHeader--docs .PageHeader-subtitle {
+  font-size: 20px;
+  margin: 0;
+}
+
+.PageHeader--docs .PageHeader-description {
+  font-size: 27px;
+  line-height: 33px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  color: #999;
+  font-weight: 300;
+}
+
+/* Features on home page */
+
+.Features {
+  padding-top: 43px;
+  padding-bottom: 33px;
+}
+
+.Features-icon {
+  color: #999;
+  font-size: 100px;
+  line-height: 90px;
+}
+
+.Features-heading {
+  margin-top: 10px;
+}

@@ -1,0 +1,5 @@
+{
+    "proxy": "http://www-cache.reith.bbc.co.uk",
+    "https-proxy": "http://www-cache.reith.bbc.co.uk",
+    "strict-ssl": false
+}

@@ -1,0 +1,35 @@
+<div class="Nav">
+    <nav class="navbar navbar-default collapse navbar-collapse" role="navigation">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-nav-alt">
+                <li {% if page.slug == "index" %} class="active"{% endif %}>
+                    <a href="/">Home</a>
+                </li>
+                <li {% if page.slug == "getting-started" %} class="active"{% endif %}>
+                    <a href="/getting-started.html">Getting Started</a>
+                </li>
+                <li class="dropdown {% if page.slug == "css" %}active{% endif %}">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">CSS <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/css/suit-css.html">SUIT CSS</a></li>
+                        <li><a href="/css/utilities.html">Utilities</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown {% if page.slug == "components" %}active{% endif %}">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/components/overview.html">Overview</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/components/aside.html">Aside</a></li>
+                        <li><a href="/components/forms.html">Forms</a></li>
+                        <li><a href="/components/headers-footers.html">Headers and Footers</a></li>
+                        <li><a href="/components/link-list.html">Link List</a></li>
+                    </ul>
+                </li>
+                <li {% if page.slug == "icons" %} class="active"{% endif %}>
+                    <a href="/icons.html">Icons</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,44 @@
+---
+layout: default
+title: SUIT CSS
+slug: css
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Introduction</h2>
+            <p>Suit is "an HTML/CSS framework for creating loosely coupled UI components". Full details can
+            be found in <a href="https://github.com/suitcss/suit">the documentation</a>.</p>
+
+            <p>For components developed specifically for BBC projects, the SUIT CSS framework and
+            <a href="https://github.com/suitcss/suit/blob/master/doc/STYLE.md">style guide</a> is used. This
+            makes it simple for other developers to contribute and keeps the code base maintainable. Please
+            familiarise yourself before using components or contributing.</p>
+
+            <h3>Using with Bootstrap</h3>
+            <p>SUIT CSS components can make use of Bootstrap in two ways. The best way is to use Bootstrap
+            classes as a utility class:</h5>
+
+{% highlight html %}
+<div class="Component Component--modifier visible-xs visible-sm">
+    <!-- Content -->
+</div>
+{% endhighlight %}
+
+            <p>Alternatively, you can create a utility class that mixes in an existing Bootstrap class or
+            mixin:</p>
+
+{% highlight css %}
+.u-someUtil {
+    .btn;
+    .btn-primary;
+}{% endhighlight %}
+
+            <p>The first option is preferred unless you need to add a lot of additional declarations to the rule set.</p>
+
+            <h3>Examples</h3>
+            <p>The new Twitter profile pages make heavy use of SUIT CSS and serve as a good reference.</p>
+        </div>
+    </div>
+</div>

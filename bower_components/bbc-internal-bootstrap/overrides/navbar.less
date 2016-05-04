@@ -1,0 +1,30 @@
+/**
+ * Navbar
+ */
+
+.navbar {
+  border: 0;
+}
+
+/* When used in conjunction with the masthead the nav needs to use
+ * collapse a little differently. Nav scopes those overrides so that normal
+ * use of the BS navbar is not affected */
+.Nav .navbar-collapse {
+  padding-right: 0;
+  padding-left:  0;
+}
+
+.navbar-toggle {
+  margin-top: 16px;
+  .icon-bar {
+    background-color: #fff;
+  }
+}
+
+.navbar-default {
+  background: @subnav-bg;
+  .navbar-nav-alt > li {
+    &.active > a { background: @subnav-hover-bg; }
+    &:hover { background: @subnav-active-bg; }
+  }
+}
